@@ -21,15 +21,15 @@ class _ShopFormPageState extends State<ShopFormPage> {
     Widget build(BuildContext context) {
         final request = context.watch<CookieRequest>();
         return Scaffold(
-        appBar: AppBar(
-            title: const Center(
-            child: Text(
-                'Form Tambah Produk',
+            appBar: AppBar(
+                title: const Center(
+                child: Text(
+                    'Form Tambah Produk',
+                ),
+                ),
+                backgroundColor: Colors.indigo,
+                foregroundColor: Colors.white,
             ),
-            ),
-            backgroundColor: Colors.indigo,
-            foregroundColor: Colors.white,
-        ),
         drawer: const LeftDrawer(),
         body: Form(
             key: _formKey,
